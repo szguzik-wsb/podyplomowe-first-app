@@ -1,0 +1,96 @@
+To polecenie tworzy katalog/folder
+mkdir {nazwa katalogu}
+
+Wejście w podany katalog/folder
+Polecenie cd {nazwa katalogu}
+
+Wyjście z katalogu
+Polecenie cd ../
+
+Listowanie zawartości katalogu
+ls
+
+Listowanie zawartości katalogu wraz z "widokiem" uprawnien
+ls -la
+lub alias 
+ll
+
+Polecenie touch tworzy plik o podanej nazwie
+touch {nazwa_pliku}
+
+Kopiowanie plików
+cp {nazwa_pliku_zrodla} {nazwa_pliku_docelowego}
+
+Edytowanie pliku np. za pomocą edytora nano
+nano {nazwa_pliku}
+
+Usuwanie pliku 
+rm {nazwa_pliku}
+
+Usuwanie katalogu z podkatalogami oraz plikami 
+rm -Rf {nazwa katalogu}
+
+Sprawdzanie wersji "Ubuntu"
+lsb_release -a
+
+Aktualizacja (sudo - zwiekszenie uprawniwn do root uzytkownika - nalezy podac haslo)
+sudo apt update
+
+Instalacja pakietów
+sudo apt install {nazwa_pakietu/programu}
+sudo apt install {nazwa_pakietu/programu} -y   // instalacja z potwierdzeniem 
+-----------------------------------------------------------------------------------------
+Instalacja Java
+
+sudo apt install default-jdk
+sudo apt install default-jre
+-----------------------------------------------------------------------------------------
+GIT
+Instalacja GIT
+sudo apt install git
+
+Po instalacji GIT-a ustawiamy nazwe uzytkownika oraz email
+git config --global user.name "Szymon Guzik"
+git config --global user.email "szymon.guzik@gdansk.merito.pl"
+
+Inicjalizacja GIT
+git init
+
+Ustawienei branch-a(gałęzi) main 
+git branch -M main
+
+Dodawanie repozytorium
+git remote add origin {link do repozytorium}
+np.
+git remote add origin https://github.com/szguzik-wsb/podyplomowe-first-app.git
+git remote add origin2 https://github.com/szguzik-wsb/podyplomowe-second-app.git
+
+Dodawanie plików do opisu zmian (commit-u)
+git add .
+git add -A
+
+Opis zmian
+git commit -m "opis zmian"
+
+Wypychanie do repozytorium na wybraną gałąź (branch)
+git push origin main
+
+Stworzenie nowej gałęzi
+git checkout -b {nazwa_gałęzi}
+git checkout -b lab1
+
+Wypychanie zmian na wybraną gałąź
+git push origin lab1
+
+Przechodzenie pomiędzy branchami
+git checkout main
+
+----------------------------------------------------------------------
+Generowanie klucza prywatnego i publicznego
+ssh-keygen
+
+
+
+
+
+
