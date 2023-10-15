@@ -89,6 +89,10 @@ git checkout main
 Generowanie klucza prywatnego i publicznego
 ssh-keygen
 
+Ustawianie używania kluczy dla wybranego repozytorium
+git remote set-url origin git@github.com:szguzik-wsb/podyplomowe-first-app.git
+
+
 
 
 
